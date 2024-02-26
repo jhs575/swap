@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
+    <title>SWAP</title>
+</head>
+
+<body>
+    <header class=" bg-[#149777]">
+        <section class="container mx-auto">
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="text-white lg:!hidden p-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl text-white font-semibold">SWAP</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>tittie</a></li>
+                        <li>
+                            <details>
+                                <summary>Parent</summary>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="bg-[#149777] p-4 text-white"><i class='bx bx-conversation font-bold text-3xl'></i></a>
+                    <a class="bg-[#149777] p-4 text-white"><i class='bx bx-user font-bold text-3xl'></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="container flex flex-col justify-center mx-auto">
+            <!-- You can open the modal using ID.showModal() method -->
+            <button id="selectedCity" class="text-white text-center w-1/4 mx-auto rounded-full mb-5 bg-[#10846F]"
+                onclick="my_modal_3.showModal()"><i class='bx bx-map'></i> All USA</button>
+            <div class="w-11/12 rounded-full mb-10 bg-white flex justify-between mx-auto">
+                <input class="pl-2 bg-transparent" type="text" placeholder="What are you looking for"><i
+                    class='bx bx-search m-1 p-2 bg-yellow-400 rounded-full'></i>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="container mx-auto">
+            <!-- item category -->
+            <div class="mt-5">
+                <div class="flex flex-row justify-between w-11/12 mx-auto">
+                    <h4 class=" font-bold">Browse items by category</h4>
+                    <button class="text-red-400">See All</button>
+                </div>
+                <div class="grid grid-cols-4 justify-items-center pt-10 w-11/12 mx-auto mb-4">
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-car font-medium text-5xl text-[#149777]"></i>
+                        <h2 class="text-center font-bold">Vehicle</h2>
+                        <p>253,010 ads</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-house-chimney font-medium text-5xl text-[#149777]"></i>
+                        <h2 class="text-center font-bold">Property</h2>
+                        <p>253,010 ads</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-mobile-screen-button font-medium text-5xl text-[#149777]"></i>
+                        <h2 class="text-center font-bold">Mobile</h2>
+                        <p>253,010 ads</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-paw font-medium text-5xl text-[#149777]"></i>
+                        <h2 class="text-center font-bold">Pets & animal</h2>
+                        <p>253,010 ads</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-shirt font-medium text-5xl text-[#149777]"></i>
+                        <h2 class="text-center font-bold">T-Shirt</h2>
+                        <p>253,010 ads</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-person-dress font-medium text-5xl text-[#149777]"></i>
+                        <h2 class="text-center font-bold">Women's Fashion</h2>
+                        <p>253,010 ads</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <i class="fa-solid fa-screwdriver-wrench font-medium text-5xl text-[#149777]"></i>
+                        <h2 class="text-center font-bold">Service</h2>
+                        <p>253,010 ads</p>
+                    </div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                    <div>11</div>
+                    <div>12</div>
+                </div>
+                <div class="flex flex-col gap-4 mx-auto lg:flex-row">
+                    <div class="card w-11/12 mx-auto bg-base-100 shadow-xl lg:w-2/5">
+                        <figure class="px-10 pt-10">
+                            <i class="fa-solid fa-hand-holding-dollar font-medium text-5xl text-[#149777]"></i>
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">Start making money</h2>
+                            <p>Do you have anything to sell?<br>Post your first ad and start making money</p>
+                            <div class="card-actions">
+                                <button class="btn !font-bold !text-white text-lg !bg-[#149777]"><i class="fa-solid fa-circle-plus"></i>Post your ad for
+                                    free</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-11/12 mx-auto bg-base-100 shadow-xl lg:w-2/5">
+                        <figure class="px-10 pt-10">
+                            <i class="fa-solid fa-shield-halved font-medium text-5xl text-[#149777]"></i>
+                        </figure>
+                        <div class="card-body items-center text-center">
+                            <h2 class="card-title">SWAP Jobs</h2>
+                            <p>Looking to hire or get hired in USA?<br>Get access to 100k+ CVs or browse through 300+ job vacancies!</p>
+                            <div class="card-actions">
+                                <button class="btn !font-bold !text-white text-lg !bg-[#149777]">Explore More<i class="fa-solid fa-circle-chevron-right"></i></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quick links -->
+                <div class="container w-11/12 mx-auto mb-4">
+                    <h2 class="mt-10 mb-5 font-semibold">Quick links</h2>
+                    <div class="flex flex-row gap-3 overflow-x-scroll">
+                        <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
+                            <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                        </div>
+                        <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
+                            <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                        </div>
+                        <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
+                            <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                        </div>
+                        <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
+                            <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                        </div>
+                        <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
+                            <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section  -->
+        <section class="container mx-auto">
+            <div class="w-11/12 mx-auto">
+                <h1 class="font-bold text-lg">About Swap, The Largest Marketplace in USA</h1>
+                <p class="">Welcome to SWAP, your go-to platform for buying and selling a diverse range of items! Whether you're looking to purchase vehicles, find your dream property, secure your next job opportunity, or recruit talented individuals, SWAP has you covered. From mobile phones to electronic gadgets, and beyond, our platform offers a seamless experience across more than 50 categories. At SWAP, we prioritize safety, intelligence, and convenience, ensuring a smooth and rewarding experience for all our users.</p>
+                <h1 class="font-bold">Buy, Sell, Rent, or Find Jobs in USA</h1>
+                <p class="my-4">Every month, millions of individuals trust SWAP to connect with buyers and sellers across a vast array of categories. From mobile devices to musical instruments, cars to houses, and even job opportunities, SWAP's classified ads feature facilitates seamless transactions for users nationwide. Need to sell items quickly? SWAP offers Ad Promotion features to enhance visibility and expedite sales.</p>
+                <p class="mb-4">SWAP boasts an extensive inventory of both new and used goods, ensuring users can easily find what they're looking for, whether it's a brand-new item or a pre-loved treasure, all conveniently located within their desired area. Our intuitive filtering options make online shopping a breeze, allowing users to swiftly navigate to their desired products.</p>
+                <p class="mb-4">For businesses, SWAP introduces the 'Membership' service, empowering them to expand their online presence. Members gain access to their own virtual shop with a custom SWAP URL, coupled with free promotion of their products. With various membership tiers available, businesses can thrive as verified members and authorized dealers, reaching a broader audience and driving growth.</p>
+                <p class="mb-4">With millions of unique monthly visitors, a vibrant community of interested buyers, and an extensive network of active dealers, SWAP stands as the premier online marketplace, facilitating seamless transactions and fostering economic growth.</p>
+                <h1 class="font-bold">Experience the Advantages of Trading on SWAP</h1>
+                <p class="my-4">At SWAP, we're dedicated to simplifying the process of connecting buyers and sellers, making it effortless to buy, sell, or rent goods and services, just like other classified sites.</p>
+                <ul class="w-11/12 mx-auto">
+                    <li class="list-disc mb-2">Effortless Transactions: Enjoy a streamlined buying and selling experience in Bangladesh with SWAP. Our platform is designed to be simpler, faster, and easier to navigate. Whether you're on the move or at home, shop and sell with ease, getting your desired products in just a few clicks.</li>
+                    <li class="list-disc mb-2">Free Ad Posting: As a free classified website, SWAP offers the convenience of free ad posting across numerous categories, tailored to users' locations. Post your ads without any hassle and reach a wide audience effortlessly.</li>
+                    <li class="list-disc mb-2">Safety and Security: SWAP prioritizes your safety and peace of mind. We verify our members and authorize dealers to ensure a secure shopping experience for all users. Shop with confidence knowing that you're interacting with trusted sellers and buyers.</li>
+                </ul>
+                <p class="my-4">Experience the convenience, safety, and efficiency of trading on SWAP today!</p>
+            </div>
+        </section>
+        <div class="border-b-2 border-[#149777]"></div>
+    </main>
+    <footer>
+        <div class="container mx-auto w-11/12">
+            <p class="text-center font-semibold mt-4">Download Our App</p>
+            <div class="flex flex-row justify-center mx-auto w-9/12 gap-4">
+                <div class="overflow-hidden rounded-[10px]">
+                    <a href="">
+                        <img src="img/google-play-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="overflow-hidden rounded-[10px]">
+                    <a href="">
+                        <img src="img/appstore.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t-[1px] mt-4">
+            <div class="container mx-auto w-11/12">
+                <i class="fa-brands fa-facebook"></i>
+                <p>Like Us on Facebook</p>
+            </div>
+        </div>
+    </footer>
+    <dialog id="my_modal_3" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <h3 class="font-bold text-xl">Select your division</h3>
+            <h3 class="text-lg my-6">All USA</h3>
+            <div>
+                <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">
+                        Northeast
+                    </div>
+                    <div class=" collapse-content">
+                        <!-- <div class="collapse collapse-arrow"> -->
+                        <!-- <input type="" name="my-accordion-2"/> -->
+                        <div class="collapse-title text-xl font-medium">
+                            Chicago
+                        </div>
+                        <!-- <div class=""> -->
+                        <ul class="collapse-content">
+                            <li>Evanston</li>
+                            <li>Schaumburg</li>
+                            <li>Naperville</li>
+                            <li>Skokie</li>
+                            <li>Deerfield</li>
+                        </ul>
+                        <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                        Southeast
+                    </div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                        Midwest
+                    </div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                        Southwest
+                    </div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">
+                        West
+                    </div>
+                    <div class="collapse-content">
+                        <p>hello</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+</body>
+
+</html>
