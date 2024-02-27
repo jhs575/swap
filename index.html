@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 
 <head>
     <meta charset="UTF-8">
@@ -56,17 +56,19 @@
                 </div>
                 <div class="navbar-end">
                     <a class="bg-[#149777] p-4 text-white"><i class='bx bx-conversation font-bold text-3xl'></i></a>
-                    <a class="bg-[#149777] p-4 text-white"><i class='bx bx-user font-bold text-3xl'></i></a>
+                    <a class="bg-[#149777] p-4 text-white flex flex-row " onclick="login.showModal()"><i
+                            class='bx bx-user font-bold text-3xl'></i>
+                        <p class="hidden lg:block">Login</p>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="container flex flex-col justify-center mx-auto">
-            <!-- You can open the modal using ID.showModal() method -->
             <button id="selectedCity" class="text-white text-center w-1/4 mx-auto rounded-full mb-5 bg-[#10846F]"
                 onclick="my_modal_3.showModal()"><i class='bx bx-map'></i> All USA</button>
-            <div class="w-11/12 rounded-full mb-10 bg-white flex justify-between mx-auto">
-                <input class="pl-2 bg-transparent" type="text" placeholder="What are you looking for"><i
-                    class='bx bx-search m-1 p-2 bg-yellow-400 rounded-full'></i>
+            <div class="w-11/12 rounded-full mb-10 bg-white flex justify-between mx-auto lg:w-3/5">
+                <input class="pl-2 bg-transparent lg:p-4" type="text" placeholder="What are you looking for"><i
+                    class='bx bx-search m-1 p-2 bg-yellow-400 rounded-full lg:p-2 lg:text-4xl'></i>
             </div>
         </section>
     </header>
@@ -133,7 +135,8 @@
                             <h2 class="card-title">Start making money</h2>
                             <p>Do you have anything to sell?<br>Post your first ad and start making money</p>
                             <div class="card-actions">
-                                <button class="btn !font-bold !text-white text-lg !bg-[#149777]"><i class="fa-solid fa-circle-plus"></i>Post your ad for
+                                <button class="btn !font-bold !text-white text-lg !bg-[#149777]"><i
+                                        class="fa-solid fa-circle-plus"></i>Post your ad for
                                     free</button>
                             </div>
                         </div>
@@ -144,9 +147,11 @@
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">SWAP Jobs</h2>
-                            <p>Looking to hire or get hired in USA?<br>Get access to 100k+ CVs or browse through 300+ job vacancies!</p>
+                            <p>Looking to hire or get hired in USA?<br>Get access to 100k+ CVs or browse through 300+
+                                job vacancies!</p>
                             <div class="card-actions">
-                                <button class="btn !font-bold !text-white text-lg !bg-[#149777]">Explore More<i class="fa-solid fa-circle-chevron-right"></i></i></button>
+                                <button class="btn !font-bold !text-white text-lg !bg-[#149777]">Explore More<i
+                                        class="fa-solid fa-circle-chevron-right"></i></i></button>
                             </div>
                         </div>
                     </div>
@@ -154,26 +159,31 @@
                 <!-- Quick links -->
                 <div class="container w-11/12 mx-auto mb-4">
                     <h2 class="mt-10 mb-5 font-semibold">Quick links</h2>
-                    <div class="flex flex-row gap-3 overflow-x-scroll">
+                    <div class="flex flex-row gap-3 overflow-x-scroll ">
                         <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
                             <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
-                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories
+                                | Audio & Sound Systems</p>
                         </div>
                         <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
                             <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
-                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories
+                                | Audio & Sound Systems</p>
                         </div>
                         <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
                             <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
-                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories
+                                | Audio & Sound Systems</p>
                         </div>
                         <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
                             <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
-                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories
+                                | Audio & Sound Systems</p>
                         </div>
                         <div class="p-4 bg-slate-200 rounded-lg !w-[260px]">
                             <h4 class="font-medium text-xl !w-[220px]">6843 ads in Electronics</h4>
-                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories | Audio & Sound Systems</p>
+                            <p class="!w-[220px]">Desktop Computers | Laptops | TVs | Cameras, Camcorders & Accessories
+                                | Audio & Sound Systems</p>
                         </div>
                     </div>
                 </div>
@@ -183,18 +193,44 @@
         <section class="container mx-auto">
             <div class="w-11/12 mx-auto">
                 <h1 class="font-bold text-lg">About Swap, The Largest Marketplace in USA</h1>
-                <p class="">Welcome to SWAP, your go-to platform for buying and selling a diverse range of items! Whether you're looking to purchase vehicles, find your dream property, secure your next job opportunity, or recruit talented individuals, SWAP has you covered. From mobile phones to electronic gadgets, and beyond, our platform offers a seamless experience across more than 50 categories. At SWAP, we prioritize safety, intelligence, and convenience, ensuring a smooth and rewarding experience for all our users.</p>
+                <p class="">Welcome to SWAP, your go-to platform for buying and selling a diverse range of items!
+                    Whether you're looking to purchase vehicles, find your dream property, secure your next job
+                    opportunity, or recruit talented individuals, SWAP has you covered. From mobile phones to electronic
+                    gadgets, and beyond, our platform offers a seamless experience across more than 50 categories. At
+                    SWAP, we prioritize safety, intelligence, and convenience, ensuring a smooth and rewarding
+                    experience for all our users.</p>
                 <h1 class="font-bold">Buy, Sell, Rent, or Find Jobs in USA</h1>
-                <p class="my-4">Every month, millions of individuals trust SWAP to connect with buyers and sellers across a vast array of categories. From mobile devices to musical instruments, cars to houses, and even job opportunities, SWAP's classified ads feature facilitates seamless transactions for users nationwide. Need to sell items quickly? SWAP offers Ad Promotion features to enhance visibility and expedite sales.</p>
-                <p class="mb-4">SWAP boasts an extensive inventory of both new and used goods, ensuring users can easily find what they're looking for, whether it's a brand-new item or a pre-loved treasure, all conveniently located within their desired area. Our intuitive filtering options make online shopping a breeze, allowing users to swiftly navigate to their desired products.</p>
-                <p class="mb-4">For businesses, SWAP introduces the 'Membership' service, empowering them to expand their online presence. Members gain access to their own virtual shop with a custom SWAP URL, coupled with free promotion of their products. With various membership tiers available, businesses can thrive as verified members and authorized dealers, reaching a broader audience and driving growth.</p>
-                <p class="mb-4">With millions of unique monthly visitors, a vibrant community of interested buyers, and an extensive network of active dealers, SWAP stands as the premier online marketplace, facilitating seamless transactions and fostering economic growth.</p>
+                <p class="my-4">Every month, millions of individuals trust SWAP to connect with buyers and sellers
+                    across a vast array of categories. From mobile devices to musical instruments, cars to houses, and
+                    even job opportunities, SWAP's classified ads feature facilitates seamless transactions for users
+                    nationwide. Need to sell items quickly? SWAP offers Ad Promotion features to enhance visibility and
+                    expedite sales.</p>
+                <p class="mb-4">SWAP boasts an extensive inventory of both new and used goods, ensuring users can easily
+                    find what they're looking for, whether it's a brand-new item or a pre-loved treasure, all
+                    conveniently located within their desired area. Our intuitive filtering options make online shopping
+                    a breeze, allowing users to swiftly navigate to their desired products.</p>
+                <p class="mb-4">For businesses, SWAP introduces the 'Membership' service, empowering them to expand
+                    their online presence. Members gain access to their own virtual shop with a custom SWAP URL, coupled
+                    with free promotion of their products. With various membership tiers available, businesses can
+                    thrive as verified members and authorized dealers, reaching a broader audience and driving growth.
+                </p>
+                <p class="mb-4">With millions of unique monthly visitors, a vibrant community of interested buyers, and
+                    an extensive network of active dealers, SWAP stands as the premier online marketplace, facilitating
+                    seamless transactions and fostering economic growth.</p>
                 <h1 class="font-bold">Experience the Advantages of Trading on SWAP</h1>
-                <p class="my-4">At SWAP, we're dedicated to simplifying the process of connecting buyers and sellers, making it effortless to buy, sell, or rent goods and services, just like other classified sites.</p>
+                <p class="my-4">At SWAP, we're dedicated to simplifying the process of connecting buyers and sellers,
+                    making it effortless to buy, sell, or rent goods and services, just like other classified sites.</p>
                 <ul class="w-11/12 mx-auto">
-                    <li class="list-disc mb-2">Effortless Transactions: Enjoy a streamlined buying and selling experience in Bangladesh with SWAP. Our platform is designed to be simpler, faster, and easier to navigate. Whether you're on the move or at home, shop and sell with ease, getting your desired products in just a few clicks.</li>
-                    <li class="list-disc mb-2">Free Ad Posting: As a free classified website, SWAP offers the convenience of free ad posting across numerous categories, tailored to users' locations. Post your ads without any hassle and reach a wide audience effortlessly.</li>
-                    <li class="list-disc mb-2">Safety and Security: SWAP prioritizes your safety and peace of mind. We verify our members and authorize dealers to ensure a secure shopping experience for all users. Shop with confidence knowing that you're interacting with trusted sellers and buyers.</li>
+                    <li class="list-disc mb-2">Effortless Transactions: Enjoy a streamlined buying and selling
+                        experience in Bangladesh with SWAP. Our platform is designed to be simpler, faster, and easier
+                        to navigate. Whether you're on the move or at home, shop and sell with ease, getting your
+                        desired products in just a few clicks.</li>
+                    <li class="list-disc mb-2">Free Ad Posting: As a free classified website, SWAP offers the
+                        convenience of free ad posting across numerous categories, tailored to users' locations. Post
+                        your ads without any hassle and reach a wide audience effortlessly.</li>
+                    <li class="list-disc mb-2">Safety and Security: SWAP prioritizes your safety and peace of mind. We
+                        verify our members and authorize dealers to ensure a secure shopping experience for all users.
+                        Shop with confidence knowing that you're interacting with trusted sellers and buyers.</li>
                 </ul>
                 <p class="my-4">Experience the convenience, safety, and efficiency of trading on SWAP today!</p>
             </div>
@@ -217,13 +253,22 @@
                 </div>
             </div>
         </div>
-        <div class="border-t-[1px] mt-4">
-            <div class="container mx-auto w-11/12">
+        <div class="border-t-[1px] border-gray-200 mt-4">
+            <div class="container mx-auto w-11/12 flex items-center justify-center gap-2 flex-row">
                 <i class="fa-brands fa-facebook"></i>
                 <p>Like Us on Facebook</p>
             </div>
         </div>
+        <div class="border-t-[1px] mt-4 border-gray-200">
+            <div class="container mx-auto w-11/12 flex items-center justify-center gap-2 flex-row">
+                <p class="border-r-[1px] border-gray-200 pr-5">Help & support </p>
+                <p class="pl-3">More</p>
+            </div>
+        </div>
     </footer>
+
+
+    <!-- modals  -->
     <dialog id="my_modal_3" class="modal">
         <div class="modal-box">
             <form method="dialog">
@@ -295,6 +340,56 @@
         </div>
     </dialog>
 
+    <dialog id="login" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle absolute right-2 top-2">✕</button>
+            </form>
+            <section class="">
+                <div class="lg:grid lg:grid-row lg:grid-cols-2">
+                    <div class="container w-11/12 mx-auto">
+                        <h1 class="font-bold text-lg mb-4">Welcome to SWAP</h1>
+                        <p class="mb-4">Login to Manage Your Account</p>
+                    </div>
+                    <div class="lg:border-l-2 border-gray-300">
+                        <div class="container w-11/12 mx-auto">
+                            <p class="font-bold mb-2">Continue with Mobile Number & OTP</p>
+                            <div class="flex flex-row gap-0">
+                                <p class="border-[1px] border-gray-300 p-2 rounded-l">+1</p>
+                                <input type="Number" class="rounded-r border-[1px] border-gray-300 p-2 w-full"
+                                    placeholder="Enter Your Mobile Number">
+                            </div>
+                        </div>
+                        <div class="container w-11/12 mx-auto border-b-2 border-gray-300 lg:border-b-0">
+                            <a
+                                class="w-full bg-[#149777] rounded-[4px] text-white mt-5 flex justify-center font-bold p-2">Continue</a>
+                            <p class="w-full text-gray-400 mt-5 flex justify-center font-bold">OR</p>
+                            <a
+                                class="w-full border-gray-300 border-[1px] rounded-[4px] text-gray-500 mt-5 flex justify-center items-center font-bold p-2"><i
+                                    class="fa-brands fa-google mr-3"></i> Continue with google</a>
+                            <a
+                                class="w-full bg-[#385999] rounded-[4px] text-white mt-5 flex justify-center items-center font-bold p-2"><i
+                                    class="fa-brands fa-facebook mr-3"></i> Continue with Facebook</a>
+                            <a
+                                class="w-full bg-[#149777] rounded-[4px] text-white mt-5 flex justify-center items-center font-bold p-2"><i
+                                    class="fa-regular fa-envelope mr-3"></i> Continue with Email</a>
+                            <p class="text-xs text-center mb-6 pb-4">By signing up for an account you agree to our<br><a
+                                    href="/terms.html" class="text-blue-500">Terms and Conditions</a></p>
+                        </div>
+                    </div>
+                    <div class="container w-11/12 mx-auto lg:-mt-[350px]">
+                        <p class="w-full rounded-[4px] text-gray-500 mt-5 flex items-center gap-10"><i
+                                class="fa-solid fa-book-open-reader"></i> Start posting your own ads.</p>
+                        <p class="w-full rounded-[4px] text-gray-500 mt-5 flex items-center gap-10"><i
+                                class="bx bx-search"></i> Mark ads as favorite and view them later.</p>
+                        <p class="w-full rounded-[4px] text-gray-500 mt-5 flex items-center gap-10"><i
+                                class="fa-solid fa-book-open-reader"></i> View and manage your ads at your convenience.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </dialog>
 </body>
 
 </html>
