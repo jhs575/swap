@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        .swiper .swiper-wrapper .swiper-slide img {
+            display: block;
+            margin: 0 auto;
+        }
+        .swiper .swiper-pagination-bullet-active {
+            background-color: #149777 !important;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img class="from-slate-200" src="img/Xiaomi-11i-Hypercharge-5G.jpg" alt="404 Not Found">
+                        <div class="p-5 relative left-10 -top-28 font-bold">
+                            <p class="font-normal text-white">Apple Gallery</p>
+                            <h2 class="text-white">Iphone 20 Pro Max</h2>
+                            <p class="text-[#149777]">TK <span>200,000</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="from-slate-200" src="img/nothing-phone2_.jpg" alt="404 Not Found">
+                        <div class="p-5 relative left-10 -top-28 font-bold">
+                            <p class="font-normal text-white">Apple Gallery</p>
+                            <h2 class="text-white">Iphone 20 Pro Max</h2>
+                            <p class="text-[#149777]">TK <span>200,000</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="from-slate-200" src="img/Xiaomi-Redmi-12C.jpg" alt="404 Not Found">
+                        <div class="p-5 relative left-10 -top-28 font-bold">
+                            <p class="font-normal text-white">Apple Gallery</p>
+                            <h2 class="text-white">Iphone 20 Pro Max</h2>
+                            <p class="text-[#149777]">TK <span>200,000</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="from-slate-200" src="img/Xiaomi-Redmi-A1-Plus.jpg" alt="404 Not Found">
+                        <div class="p-5 relative left-10 -top-28 font-bold">
+                            <p class="font-normal text-white">Apple Gallery</p>
+                            <h2 class="text-white">Iphone 20 Pro Max</h2>
+                            <p class="text-[#149777]">TK <span>200,000</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="from-slate-200" src="img/Xiaomi-Redmi-A1-Plus.jpg" alt="404 Not Found">
+                        <div class="p-5 relative left-10 -top-28 font-bold">
+                            <p class="font-normal text-white">Apple Gallery</p>
+                            <h2 class="text-white">Iphone 20 Pro Max</h2>
+                            <p class="text-[#149777]">TK <span>200,000</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
