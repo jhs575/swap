@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
     <title>SWAP</title>
 </head>
 
 <body>
+    <div id="adPostBtn" class=" lg:hidden container !sticky top-[94vh] flex justify-center mx-auto z-50">
+        <a class="btn !bg-red-500  !text-white" href="">POST YOUR AD</a>
+        <!-- to show this button *login required -->
+    </div>
     <header class=" bg-[#149777]">
         <section class="container mx-auto">
             <div class="navbar">
@@ -25,7 +30,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            class="menu menu-sm dropdown-content mt-3 z-[10] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a>Item 1</a></li>
                             <li>
                                 <a>Parent</a>
@@ -39,9 +44,9 @@
                     </div>
                     <a class="text-xl text-white font-semibold">SWAP</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <!-- <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>tittie</a></li>
+                        <li><a>tit tie</a></li>
                         <li>
                             <details>
                                 <summary>Parent</summary>
@@ -53,13 +58,17 @@
                         </li>
                         <li><a>Item 3</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div class="navbar-end">
-                    <a class="bg-[#149777] p-4 text-white"><i class='bx bx-conversation font-bold text-3xl'></i></a>
-                    <a class="bg-[#149777] p-4 text-white flex flex-row " onclick="login.showModal()"><i
-                            class='bx bx-user font-bold text-3xl'></i>
+                    <a class="bg-[#149777] p-4 text-white flex flex-row gap-2 items-center">
+                        <i class='bx bx-conversation font-medium text-3xl'></i>
+                        <p class="hidden lg:block">Chat</p>
+                    </a>
+                    <a class="bg-[#149777] p-4 text-white flex flex-row gap-2 items-center" onclick="login.showModal()">
+                        <i class='bx bx-user font-medium text-3xl'></i>
                         <p class="hidden lg:block">Login</p>
                     </a>
+                    <a class="hidden btn !bg-red-500 !text-white lg:flex" href="">POST YOUR AD</a>
                 </div>
             </div>
         </section>
@@ -274,33 +283,84 @@
         </section>
         <div class="border-b-2 border-[#149777]"></div>
     </main>
+
+
     <footer>
-        <div class="container mx-auto w-11/12">
-            <p class="text-center font-semibold mt-4">Download Our App</p>
-            <div class="flex flex-row justify-center mx-auto w-9/12 gap-4">
-                <div class="overflow-hidden rounded-[10px]">
-                    <a href="">
-                        <img src="img/google-play-logo.png" alt="">
-                    </a>
+        
+        <div class="container mx-auto w-11/12 lg:grid lg:grid-cols-12">
+            <div class="lg:col-span-4 pb-16">
+                <div class="container mx-auto w-11/12 lg:justify-start">
+                    <p class="text-center font-semibold mt-4 lg:text-left">Download Our App</p>
+                    <div class="flex flex-row justify-center mx-auto w-9/12 gap-4 lg:mx-0">
+                        <div class="overflow-hidden rounded-[10px]">
+                            <a href="">
+                                <img src="img/google-play-logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="overflow-hidden rounded-[10px]">
+                            <a href="">
+                                <img src="img/appstore.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="overflow-hidden rounded-[10px]">
-                    <a href="">
-                        <img src="img/appstore.png" alt="">
-                    </a>
+                <div class="border-t-[1px] border-gray-200 mt-4 lg:border-0">
+                    <div class="container mx-auto w-11/12 ">
+                        <p class="font-bold hidden lg:block">Connect With</p>
+                        <div class="flex items-center justify-center gap-2 flex-row lg:justify-start">
+                            <i class="fa-brands fa-facebook text-[#3b5999] text-xl"></i>
+                            <p class="text-[#3b5999] font-semibold">Like Us on Facebook</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="border-t-[1px] mt-4 border-gray-200 lg:hidden">
+                    <div class="container mx-auto w-11/12 flex items-center justify-center gap-2 flex-row ">
+                        <p class="border-r-[1px] border-gray-200 pr-5 ">Help & support </p>
+                        <p class="pl-3">More</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:block lg:col-span-2 mt-4 ">
+                <h3 class="font-semibold">More form SWAP</h3>
+                <ul class="font-normal text-[#3b5999]">
+                    <li><a href="">Sell Fast</a></li>
+                    <li><a href="">Membership</a></li>
+                    <li><a href="">Banner Ads</a></li>
+                    <li><a href="">Ad Promotions</a></li>
+                    <li><a href="">Bikes Guide</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:block lg:col-span-2 mt-4 font-semibold">
+                <h3 class="font-semibold">Help & Support</h3>
+                <ul class="text-[#3b5999] font-normal">
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Stay Safe</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:block lg:col-span-2 mt-4 font-semibold">
+                <h3 class="font-semibold">Follow SWAP</h3>
+                <ul class="font-normal text-[#3b5999]">
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">X</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:block lg:col-span-2 mt-4 font-semibold">
+                <h3 class="font-semibold">About SWAP</h3>
+                <ul class="text-[#3b5999] font-normal">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Terms and Condition</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
             </div>
         </div>
-        <div class="border-t-[1px] border-gray-200 mt-4">
-            <div class="container mx-auto w-11/12 flex items-center justify-center gap-2 flex-row">
-                <i class="fa-brands fa-facebook"></i>
-                <p>Like Us on Facebook</p>
-            </div>
-        </div>
-        <div class="border-t-[1px] mt-4 border-gray-200">
-            <div class="container mx-auto w-11/12 flex items-center justify-center gap-2 flex-row">
-                <p class="border-r-[1px] border-gray-200 pr-5">Help & support </p>
-                <p class="pl-3">More</p>
-            </div>
+        <div class="hidden lg:border-t-2 lg:border-gray-200 lg:mt-10 lg:pt-8 lg:pb-12 lg:container lg:mx-auto lg:flex lg:flex-row lg:justify-between">
+            <div>Copyright © <a href="https://www.sohag.pro">Sohag.pro</a></div>
+            <div class="font-extrabold text-2xl">SWAP</div>
         </div>
     </footer>
 
