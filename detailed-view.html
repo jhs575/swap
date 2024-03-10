@@ -1,94 +1,206 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
-    <title>SWAP</title>
-    <style>
-        .swiper .swiper-wrapper .swiper-slide img {
-          width: 350px;
-          height: 500px;
-          display: block;
-          margin: 0 auto;
-        }
-    
-        .swiper .swiper-pagination-bullet-active {
-          background-color: #149777 !important;
-        }
-      </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/f6d06b43d8.js" crossorigin="anonymous"></script>
+  <title>SWAP</title>
+  <style>
+    .swiper .swiper-wrapper .swiper-slide img {
+      width: 350px;
+      height: 500px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .swiper .swiper-pagination-bullet-active {
+      background-color: #149777 !important;
+    }
+  </style>
 </head>
 
 <body>
-    <main>
-        <section>
-            <div class="container mx-auto">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-            
-                      <div class="swiper-slide">
-                        <img class="from-slate-200" src="img/p1.png" alt="404 Not Found">
-                        <div class="p-5 relative left-10 -top-2 font-bold">
-                          <p class="font-normal ">Apple Gallery</p>
-                          <h2 class="">Iphone 20 Pro Max</h2>
-                          <p class="text-[#149777]">TK <span>200,000</span></p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="from-slate-200" src="img/p3.webp" alt="404 Not Found">
-                        <div class="p-5 relative left-10 -top-2 font-bold">
-                          <p class="font-normal ">Apple Gallery</p>
-                          <h2 class="">Iphone 20 Pro Max</h2>
-                          <p class="text-[#149777]">TK <span>200,000</span></p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="from-slate-200" src="img/p4.png" alt="404 Not Found">
-                        <div class="p-5 relative left-10 -top-2 font-bold">
-                          <p class="font-normal ">Apple Gallery</p>
-                          <h2 class="">Iphone 20 Pro Max</h2>
-                          <p class="text-[#149777]">TK <span>200,000</span></p>
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <img class="from-slate-200" src="img/p5.png" alt="404 Not Found">
-                        <div class="p-5 relative left-10 -top-2 font-bold">
-                          <p class="font-normal ">Apple Gallery</p>
-                          <h2 class="">Iphone 20 Pro Max</h2>
-                          <p class="text-[#149777]">TK <span>200,000</span></p>
-                        </div>
-                      </div>
-            
-                    </div>
-                     <div class="swiper-pagination"></div>
-                    <!--<div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
-                  </div>                
+  <main class="bg-[#E7EDEE]">
+    <section class="bg-white">
+      <div class="container mx-auto">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <img class="from-slate-200" src="img/p1.png" alt="404 Not Found">
             </div>
-        </section>
-    </main>
-    <script>
-        const swiper = new Swiper('.swiper', {
-          loop: true,
-    
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
-    
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-        });
-      </script>
+            <div class="swiper-slide">
+              <img class="from-slate-200" src="img/p3.webp" alt="404 Not Found">
+            </div>
+            <div class="swiper-slide">
+              <img class="from-slate-200" src="img/p4.png" alt="404 Not Found">
+            </div>
+            <div class="swiper-slide">
+              <img class="from-slate-200" src="img/p5.png" alt="404 Not Found">
+            </div>
+
+          </div>
+          <div class="swiper-pagination hidden lg:block"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="container mx-auto py-4 px-4">
+        <h1 class="font-bold text-xl">Samsung Galaxy A03S 4/64 (Used)</h1>
+        <p class="pb-4 border-b-2 border-gray-300">Posted on 10 Mar 09:07 pm, Evanston</p>
+      </div>
+      <div class="container mx-auto py-3 px-4">
+        <h1 class="font-bold text-2xl text-[#149777]">TK 5,684</h1>
+        <p class="">for sale by <span class="font-bold">Jahid Hasan</span></p>
+      </div>
+      <div class="container mx-auto py-3 px-4">
+        <div class="grid grid-cols-2">
+          <p>Condition:</p>
+          <p>Used</p>
+        </div>
+        <div class="grid grid-cols-2">
+          <p>Brand:</p>
+          <p>Samsung</p>
+        </div>
+        <div class="grid grid-cols-2">
+          <p>Model:</p>
+          <p>Galaxy A03S</p>
+        </div>
+        <div class="grid grid-cols-2">
+          <p>Edition:</p>
+          <p>Samsung Galaxy A03S 4/64</p>
+        </div>
+        <div class="grid grid-cols-2">
+          <p>Authenticity:</p>
+          <p>Original</p>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto py-3 px-4 bg-white">
+      <h1 class="font-bold">Features</h1>
+      <p class="pb-4">4G, Dual SIM, Micro SIM, Mini SIM, Android, 4GB RAM, Dual Camera, Triple Camera, Dual LED Flash,
+        Quad LED Flash, Bluetooth, Wifi, GPS, Fingerprint Sensor.</p>
+      <h1 class="font-bold">Description</h1>
+      <p>This is one of the best mobile phone ever I seen. but I need some money that's why I want to sell my mobile
+        phone.</p>
+    </section>
+    <div class="py-2"></div>
+    <section class="container mx-auto py-3 bg-white grid gap-4 lg:grid-cols-2 lg:gap-5">
+      <div class="w-10/12 lg:w-full lg:p-3 mx-auto">
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img class="w-28 h-32" src="img/Xiaomi-Redmi-A1-Plus.jpg" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Redmi Note 100 + (Used)</h2>
+            <p>Evanston</p>
+            <p>Tk <span>1,000</span></p>
+            <div class="card-actions justify-end">
+              <p class="text-end">20 min ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-10/12 lg:w-full lg:p-3 mx-auto">
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img class="w-28 h-32" src="img/Xiaomi-Redmi-12C.jpg" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Redmi Note 100 + (Used)</h2>
+            <p>Evanston</p>
+            <p>Tk <span>10,000</span></p>
+            <div class="card-actions justify-end">
+              <p class="text-end">1 Day ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mx-auto py-3 px-4 bg-[#F3F6F5]">
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Popular Mobile Phones
+        </div>
+        <div class="collapse-content">
+          <ul class="list-disc mx-8">
+            <li><a href=""><span class="text-blue-400">Apple</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Huawei</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Xiaomi</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Sony</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Trending Mobile Phones
+        </div>
+        <div class="collapse-content">
+          <ul class="list-disc mx-8">
+            <li><a href=""><span class="text-blue-400">Xiaomi</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Huawei</span> mobile phone in <span
+                class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> mobile phone in <span
+              class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Apple</span> mobile phone in <span
+                      class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Sony</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          Samsung Galaxy A03S Mobile By Location
+        </div>
+        <div class="collapse-content">
+          <ul class="list-disc mx-8">
+            <li><a href=""><span class="text-blue-400">Samsung</span> Galaxy A03S mobile phone for sale in <span
+              class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> Galaxy A03S mobile phone for sale in <span
+              class="font-medium">Evanston division</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> Galaxy A03S mobile phone for sale in <span
+              class="font-medium">San Francisco</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> Galaxy A03S mobile phone for sale in <span
+              class="font-medium">Chicago</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="mx-auto flex justify-center pt-3">
+      <a href="#" class="text-blue-400">^  Back to top</a>
+    </div>
+    <div class="py-3 border-b-2 border-[#149777]"></div>
+
+  </main>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>
