@@ -92,7 +92,7 @@
         phone.</p>
     </section>
     <div class="py-2"></div>
-    <section class="container mx-auto py-3 bg-white grid gap-4 lg:grid-cols-2 lg:gap-5">
+    <section class="container mx-auto py-3 grid gap-4 lg:grid-cols-2 lg:gap-5">
       <div class="w-10/12 lg:w-full lg:p-3 mx-auto">
         <div class="card card-side bg-base-100 shadow-xl">
           <figure><img class="w-28 h-32" src="img/Xiaomi-Redmi-A1-Plus.jpg" alt="" /></figure>
@@ -102,6 +102,19 @@
             <p>Tk <span>1,000</span></p>
             <div class="card-actions justify-end">
               <p class="text-end">20 min ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-10/12 lg:w-full lg:p-3 mx-auto">
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img class="w-28 h-32" src="img/Xiaomi-11i-Hypercharge-5G.jpg" alt="" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Redmi Note 100 + (Used)</h2>
+            <p>Evanston</p>
+            <p>Tk <span>1,000</span></p>
+            <div class="card-actions justify-end">
+              <p class="text-end">6 hours ago</p>
             </div>
           </div>
         </div>
@@ -120,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto py-3 px-4 bg-[#F3F6F5]">
+    <section class="container mx-auto py-3 px-4 bg-[#F3F6F5] lg:hidden">
       <div class="collapse collapse-arrow">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
@@ -180,11 +193,75 @@
         </div>
       </div>
     </section>
-    <div class="mx-auto flex justify-center pt-3">
+    <section class="container mx-auto mt-4 py-8 px-4 bg-[#F3F6F5] rounded-xl">
+      <div class="grid grid-cols-4">
+        <div>
+          <h1 class="font-bold mb-3">Popular Mobile Phones</h1>
+          <ul class="">
+            <li><a href=""><span class="text-blue-400">Apple</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Huawei</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Xiaomi</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Sony</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-bold mb-3">Trending Mobile Phones</h1>
+          <ul>
+            <li><a href=""><span class="text-blue-400">Xiaomi</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Huawei</span> mobile phone in <span
+                class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> mobile phone in <span
+              class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Apple</span> mobile phone in <span
+                      class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Sony</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-bold mb-3">Popular Mobile Phones</h1>
+          <ul class="">
+            <li><a href=""><span class="text-blue-400">Apple</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Huawei</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Xiaomi</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Sony</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="font-bold mb-3">Popular Mobile Phones</h1>
+          <ul class="">
+            <li><a href=""><span class="text-blue-400">Apple</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Samsung</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Huawei</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Xiaomi</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+            <li><a href=""><span class="text-blue-400">Sony</span> mobile phone in <span
+                  class="font-medium">Evanston</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="mx-auto flex justify-center pt-3 lg:hidden">
       <a href="#" class="text-blue-400">^  Back to top</a>
     </div>
     <div class="py-3 border-b-2 border-[#149777]"></div>
-
+    
   </main>
   <script>
     const swiper = new Swiper('.swiper', {
